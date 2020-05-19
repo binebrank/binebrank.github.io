@@ -4,3 +4,11 @@
 
 layout: home
 ---
+
+<p style="font-family:Roboto">
+Because every good coder needs his own webpage...
+</p>
+Yea, I should update the front page.
+
+
+

@@ -3,10 +3,12 @@ layout: page
 title: About
 ---
 
-<img src="me.jpg" alt="Bine Brank">
+<img src="assets/about.jpeg" alt="Bine Brank">
 
-this is my webpage.
+this part is about me.
+
 I am still working on it.
+
 Be patient
 
 
