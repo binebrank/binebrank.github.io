@@ -1,19 +1,26 @@
 ---
 layout: default
 ---
+<section id="showcase">
+    <div class="wrapper">
+        <h1>
+            Cause every good coder need his own webpage..
+        </h1>
+    </div>
 
-    <div class="home">
-        {%- if page.title -%}
-        <h1 class="page-heading">{{ page.title }}</h1>
-        {%- endif -%}
+</section>
 
-        <img src="assets/showcase.jpg" alt="Showcase">
-
+<section id="home">
+    <div class="wrapper">
+    <div id="home-main">
 
         {{ content }}
+        </div>
 
+    <div id="latest-posts-side">
         {%- if site.posts.size > 0 -%}
-        <h2 class="post-list-heading">{{ page.list_title | default: "Latest posts" }}</h2>
+        <h2 >{{ page.list_title | default: "Latest posts" }}</h2>
+
         <ul class="post-list">
             {%- for post in site.posts -%}
             <li>
@@ -35,3 +42,5 @@ layout: default
         {%- endif -%}
 
     </div>
+    </div>
+</section>

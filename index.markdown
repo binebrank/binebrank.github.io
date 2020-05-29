@@ -5,10 +5,10 @@
 layout: home
 ---
 
-<p style="font-family:Roboto">
-Because every good coder needs his own webpage...
-</p>
-Yea, I should update the front page.
+<h1>
+Welcome to my webpage
 
+</h1>
+Here you will find everything from hateful rants, phylosophic thoughts, motivation, blogs, pictures, bla bla bla
 
 

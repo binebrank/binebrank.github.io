@@ -2,7 +2,7 @@
  * Site header
  */
 .header-site {
-    background-color: $background-color-blue;
+    background-color: blue;
   //border-top: 5px solid $grey-color-dark;
   //border-bottom: 1px solid $grey-color-light;
   //min-height: $spacing-unit * 1.865;
@@ -12,7 +12,7 @@
 }
 
 .header-nav {
-    background-color: $background-color-grey;
+    background-color: #333;
   //border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   //min-height: $spacing-unit * 1.865;
@@ -21,7 +21,6 @@
   position: relative;
 }
 .navlist{
-    background-color:$background-color-grey;
     margin: 0px 0px;
 }
 .nav-list ul{
@@ -125,6 +124,31 @@
 }
 
 
+// Home
+#showcase {
+    background-image: url('/images/showcase.jpg');
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#showcase h1{
+    color:#fff;
+    font-size:50px;
+    line-height: 1.6cm;
+    padding-top: 30px;
+}
+
+#home-main{
+    float: left;
+    width: 50%;
+}
+#latest-posts-side{
+    background-color: #333;
+    float: left;
+    width: 50%;
+}
+
 
 /**
  * Page content
@@ -138,11 +162,15 @@
   @include relative-font-size(2);
 }
 
-.post-list-heading {
+#latest-posts-side{
+
+}
+#latest-posts-side h2{
   @include relative-font-size(1.75);
+
 }
 
-.post-list {
+#latest-posts-side ul {
   margin-left: 0;
   list-style: none;
 
