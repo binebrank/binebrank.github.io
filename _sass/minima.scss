@@ -10,21 +10,21 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$brand-color:      #999999 !default;
-$brand-color-light:     lighten($brand-color, 5%) !default;
-$brand-color-dark:      darken($brand-color, 35%) !default;
+$brand-color:      #828282 !default;
+$brand-color-light:     lighten($brand-color, 40%) !default;
+$brand-color-dark:      darken($brand-color, 25%) !default;
 
 $site-title-color:      #ffffff !default;
 
 $text-color:       black !default;
 $background-color: white !default;
-$background-color-blue: blue !default;
+$background-color-blue: #0073ff !default;
 $background-color-grey: grey !default;
 $code-background-color: #212121 !default;
 
 $link-base-color:       #ffffff !default;
-$link-visited-color:    $link-base-color !default;
-$link-hover-color:      $link-base-color !default;
+$link-visited-color:    darken($link-base-color, 15%) !default;
+$link-hover-color:      $text-color !default;
 
 
 $border-color-01:       $brand-color-dark !default;

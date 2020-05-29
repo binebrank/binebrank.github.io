@@ -4,7 +4,9 @@ layout: default
 <section id="showcase">
     <div class="wrapper">
         <h1>
-            Cause every good coder need his own webpage..
+            Because every cool dude
+            <br/>
+            need his own webpage...
         </h1>
     </div>
 
@@ -12,35 +14,31 @@ layout: default
 
 <section id="home">
     <div class="wrapper">
-    <div id="home-main">
-
-        {{ content }}
+        <div id="home-main">
+            {{ content }}
         </div>
 
-    <div id="latest-posts-side">
-        {%- if site.posts.size > 0 -%}
-        <h2 >{{ page.list_title | default: "Latest posts" }}</h2>
+        <div id="latest-posts-side">
+            <h2 >{{ page.list_title | default: "Latest posts" }}</h2>
+            <ul >
+                {%- for post in site.posts -%}
+                <li>
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <span class="post-meta">{{ post.date | date: date_format }}</span>
+                    <h3>
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                    </h3>
+                    {%- if site.show_excerpts -%}
+                    {{ post.excerpt }}
+                    {%- endif -%}
+                </li>
+                {%- endfor -%}
+            </ul>
 
-        <ul class="post-list">
-            {%- for post in site.posts -%}
-            <li>
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <h3>
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                        {{ post.title | escape }}
-                    </a>
-                </h3>
-                {%- if site.show_excerpts -%}
-                {{ post.excerpt }}
-                {%- endif -%}
-            </li>
-            {%- endfor -%}
-        </ul>
+            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-        {%- endif -%}
-
-    </div>
+        </div>
     </div>
 </section>
