@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom:0; // $spacing-unit / 2;
 }
 
 
@@ -55,8 +55,7 @@ main {
  * Images
  */
 img {
-    float: right;
-  max-width: 40%;
+  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -79,13 +78,13 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+//  margin-left: $spacing-unit;
 }
 
 li {
   > ul,
   > ol {
-    margin-bottom: 0;
+ //   margin-bottom: 0;
   }
 }
 
@@ -170,19 +169,11 @@ pre {
   }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
+.site-wrapper{
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -190,6 +181,19 @@ pre {
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
+
+}
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
 }
 
 
