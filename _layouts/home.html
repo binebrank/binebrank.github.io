@@ -6,11 +6,13 @@ layout: default
         <h1>
             Because every cool dude
             <br/>
-            need his own webpage...
+            needs his own webpage...
         </h1>
     </div>
 
 </section>
+
+<main class="page-content" aria-label="Content">
 
 <section id="home">
     <div class="wrapper">
@@ -26,7 +28,7 @@ layout: default
                     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                     <span class="post-meta">{{ post.date | date: date_format }}</span>
                     <h3>
-                        <a class="post-link" href="{{ post.url | relative_url }}">
+                        <a class="latest-posts-side" href="{{ post.url | relative_url }}">
                             {{ post.title | escape }}
                         </a>
                     </h3>
@@ -42,3 +44,4 @@ layout: default
         </div>
     </div>
 </section>
+    </main>

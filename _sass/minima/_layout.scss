@@ -3,7 +3,8 @@
  */
 .header-site {
     min-height: 48px;
-    background-color: $background-color-blue;
+    //background-color: $background-color-blue;
+    background-image: linear-gradient($background-color-blue, $background-color-grey);
   //border-top: 5px solid $grey-color-dark;
   //border-bottom: 1px solid $grey-color-light;
   //min-height: $spacing-unit * 1.865;
@@ -14,15 +15,18 @@
 
 .header-nav {
     min-height: 32px;
-    background-color: #333;
+    background-color: $background-color-grey;
   //border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  //border-bottom: 1px solid $grey-color-light;
   //min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
 }
 .nav-list{
 
+}
+.nav-list a{
+    color: white;
 }
 .nav-list ul{
     list-style: none;
@@ -36,11 +40,14 @@
 .nav-list a{
     padding-right:15px;
     font-size:20px;
+    font-weight: bold
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
+  @include relative-font-size(2.625);
+  font-family: "Marck Script";
+  font-style: italic;
+  //font-weight: bold;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -131,19 +138,22 @@
 
 // Home
 #showcase {
-    background-image: url('/images/showcase.jpg');
-    background-position: center right;
-    min-height: 200px;
-    margin-bottom: 30px;
-    text-align: center;
+    background-image: url('/images/black_grad.png'), url('/images/white_grad.png'), url('/images/homecase.png');
+    background-position: center top, center bottom,  center center;
+    background-repeat: repeat-x, repeat-x, repeat;
+    background-size: 128px 128px, 128px 16px, auto auto;
+    min-height: 300px;
+    //margin-bottom: 30px;
 }
 #showcase h1{
     color:#fff;
-    font-size:32px;
+    font-size:30px;
     font-weight: bold;
     line-height: 1.6cm;
-    padding-top: 30px;
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    padding-top: 60px;
+    //vertical-align: middle;
+    text-align: center;
+    text-shadow: 7px 7px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -163,6 +173,9 @@
     color: white;
   @include relative-font-size(1.75);
 
+}
+#latest-posts-side a{
+    color: white;
 }
 
 #latest-posts-side ul {
@@ -243,6 +256,7 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
+  font-weight: bold;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
@@ -250,9 +264,10 @@
 }
 
 .page-content {
-  padding: 0, 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  //padding: $spacing-unit, 0;
   flex: 1 0 auto;
-  margin-bottom: $spacing-unit;
 
   h2 {
     @include relative-font-size(2);

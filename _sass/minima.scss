@@ -15,14 +15,15 @@ $brand-color-light:     lighten($brand-color, 40%) !default;
 $brand-color-dark:      darken($brand-color, 25%) !default;
 
 $site-title-color:      #ffffff !default;
+$transparent:   rgba(0, 0, 0, 0) !default;
 
 $text-color:       black !default;
 $background-color: white !default;
-$background-color-blue: #0073ff !default;
-$background-color-grey: grey !default;
+$background-color-blue: rgb(11, 59, 125) !default;
+$background-color-grey: rgb(35, 35, 35) !default;
 $code-background-color: #212121 !default;
 
-$link-base-color:       #ffffff !default;
+$link-base-color:       #333 !default;
 $link-visited-color:    darken($link-base-color, 15%) !default;
 $link-hover-color:      $text-color !default;
 
@@ -70,5 +71,6 @@ $on-laptop:        800px !default;
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/syntax-highlighting",
+  "minima/pages"
 ;
