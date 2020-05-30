@@ -76,14 +76,19 @@
 
 .footer-heading {
   @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+  //margin-bottom: $spacing-unit / 4;
   color: white;
+  font-family: "Marck Script";
+    font-size: 24px;
 }
 
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
+}
+.social-media-list a{
+    color: white;
 }
 
 .footer-col-wrapper {
@@ -113,6 +118,9 @@
   width: -webkit-calc(45% - (#{$spacing-unit} / 2));
   width:         calc(45% - (#{$spacing-unit} / 2));
 }
+.u-email{
+    color:white;
+}
 
 @include media-query($on-laptop) {
   .footer-col-1,
@@ -141,7 +149,7 @@
     background-image: url('/images/black_grad.png'), url('/images/white_grad.png'), url('/images/homecase.png');
     background-position: center top, center bottom,  center center;
     background-repeat: repeat-x, repeat-x, repeat;
-    background-size: 128px 128px, 128px 16px, auto auto;
+    background-size: 128px 128px, 128px 128px, auto auto;
     min-height: 300px;
     //margin-bottom: 30px;
 }
