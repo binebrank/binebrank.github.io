@@ -5,11 +5,10 @@
 layout: home
 ---
 
-<h1>
+<h1 class="page-title">
 Welcome to my webpage
 </h1>
 
-<br/>
 <p>
 Here you will find everything from hateful rants, phylosophic thoughts, motivation, blogs, pictures, bla bla bla
 

@@ -3,6 +3,8 @@
 // Define defaults for each variable.
 
 $base-font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$title-font-family: "Marck Script" !default; 
+$heading-font-family: "Convergence" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -17,10 +19,11 @@ $brand-color-dark:      darken($brand-color, 25%) !default;
 $site-title-color:      #ffffff !default;
 $transparent:   rgba(0, 0, 0, 0) !default;
 
-$text-color:       black !default;
+$text-color:       rgb(35,35,35) !default;
 $background-color: white !default;
 $background-color-blue: rgb(11, 59, 125) !default;
 $background-color-grey: rgb(35, 35, 35) !default;
+$background-color-purple: rgb(68, 20, 157) !default;
 $code-background-color: #212121 !default;
 
 $link-base-color:       #333 !default;
@@ -67,6 +70,10 @@ $content-width:    800px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
+
+
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
