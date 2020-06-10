@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My start in competitive programming"
+title:  "My Start In Competitive Programming"
 date:   2020-05-17 20:08:26 +0200
 categories: coding
 ---
