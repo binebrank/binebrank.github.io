@@ -10,7 +10,12 @@ Welcome to my webpage
 </h1>
 
 <p>
-Here you will find everything from hateful rants, phylosophic thoughts, motivation, blogs, pictures, bla bla bla
+This page is still under construction.
+
+If you want to know my skills, navigate to the About section.
+
+I also write a blog.
+You will find everything from hateful rants, phylosophic thoughts, motivation, blogs, pictures, bla bla bla
 
 </p>
 
