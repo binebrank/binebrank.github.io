@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Typing Mistakes"
-date:   2020-06-10 01:08:26 +0100
+date:   2020-07-07 01:08:26 +0100
 categories: coding
 ---
 
@@ -39,4 +39,4 @@ that are specifically targeted at your learning profile. If you are typing certa
 More acurate measurement of typing speed can be estimed from the typeracer.com platform. Typing average now stands at around 60-65 words per minute.
 This means an overall improvement of 20 wpm from a 3 week training.
 
-![My learning curve on keybr.com](/assets/typing_improvement.png)
+![My learning curve on keybr.com](/images/typing_improvement.png)

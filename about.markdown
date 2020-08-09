@@ -4,14 +4,14 @@ title: About
 ---
 
 <div class="about-image">
-<img src="assets/about.jpeg" alt="Bine Brank">
+<img src="images/about.jpeg" alt="Bine Brank">
 
 </div>
 
 <div class="about-text">
 <p>
 this part is about me. It is not finished. I know it looks ugly.
-Yes, I don't like web development.
+Yes, I don't like web design.
 </p>
 
 <br>
